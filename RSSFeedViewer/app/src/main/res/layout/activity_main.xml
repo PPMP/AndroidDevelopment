@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.patornp.rssfeedviewer.MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/topTenAppView"
+        android:text="Top 10 Free Apps"
+        android:background="#352d8d"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffff"
+        android:paddingLeft="9dp"
+        android:paddingRight="9dp" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listtopFieldsView"
+        android:layout_below="@+id/topTenAppView"
+        android:layout_centerHorizontal="true"
+        android:background="#c8c8f9"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:stackFromBottom="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Top 25 Songs"
+        android:id="@+id/topSong"
+        android:textColor="#ffffff"
+        android:background="#352d8d"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/listtopFieldsView"
+        android:layout_alignEnd="@+id/listtopFieldsView"
+        android:paddingLeft="9dp"
+        android:paddingRight="9dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="TOP"
+        android:id="@+id/currentList"
+        android:textColor="#352d8d"
+        android:layout_alignTop="@+id/topTenAppView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp" />
+
+</RelativeLayout>
