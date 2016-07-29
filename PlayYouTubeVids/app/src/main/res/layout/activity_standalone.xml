@@ -4,19 +4,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.pongsanit.patorn.playyoutubevids.Standalone_Activity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#c2f9db">
     <Button
         android:id="@+id/btnPlay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:text="@string/playvideo"/>
+        android:text="@string/playvideo"
+        android:background="#79f2d8" />
 
     <Button
         android:id="@+id/btnPlayPlaylist"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:text="@string/playplaylist"/>
+        android:text="@string/playplaylist"
+        android:background="#79f2d8" />
 
 </LinearLayout>
