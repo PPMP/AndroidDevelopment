@@ -41,7 +41,7 @@ public class Standalone_Activity extends AppCompatActivity
             default:
         }
         if(intent != null) {
-            startActivity(intent);      //good practice. If not, it crashes. starts youtube player
+            startActivity(intent);      //starts activity based on intent
         }
     }
 }

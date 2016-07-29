@@ -3,4 +3,6 @@
     <string name="title_activity_maps">Map</string>
     <string name="playvideo">Play Video</string>
     <string name="playplaylist">Play playlist</string>
+    <string name="youtube_player">Go Youtube Player</string>
+    <string name="standalone">Standalone Player</string>
 </resources>
