@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         GetRawData getRawData = new GetRawData("https://www.flickr.com/services/feeds/photos_public.gne?&format=json&nojsoncallback=1");
+        getRawData.execute();
 
     }
 }

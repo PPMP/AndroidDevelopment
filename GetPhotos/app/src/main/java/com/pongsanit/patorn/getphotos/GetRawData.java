@@ -40,6 +40,16 @@ public class GetRawData {
         return mData;
     }
 
+    public DownloadStatus getmDownloadStatus() {
+        return mDownloadStatus;
+    }
+
+    public void execute() {
+        mDownloadStatus = DownloadStatus.PROCESSING;
+        DownloadRawData downloadRawData = new DownloadRawData();
+        downloadRawData.execute(mRawUrl);
+    }
+
     public class DownloadRawData extends AsyncTask<String, Void, String> {
 
         protected void onPostExecute(String webData) {
@@ -55,9 +65,7 @@ public class GetRawData {
                 mDownloadStatus = DownloadStatus.OK;
             }
         }
-        public void execute() {
-            mDownloadStatus = DownloadStatus.PROCESSING;
-        }
+
         @Override
         protected String doInBackground(String... params) {
             HttpURLConnection urlConnection = null;
