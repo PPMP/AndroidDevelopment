@@ -39,6 +39,10 @@ public class FlickrJsonData extends GetRawData{
         return mDestinationUri != null;
     }
 
+    public List<Photo> getMPhotos(){
+        return mPhotos;
+    }
+
     public void execute() {
         super.setmRawUrl(mDestinationUri.toString());
         DownloadJsonData downloadJsonData = new DownloadJsonData();
@@ -93,7 +97,8 @@ public class FlickrJsonData extends GetRawData{
         }
 
         protected String doInBackground(String... params) {
-            return super.doInBackground(params);
+            String[] par = {mDestinationUri.toString()};
+            return super.doInBackground(par);
         }
 
     }
