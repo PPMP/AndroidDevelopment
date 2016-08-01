@@ -10,8 +10,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        GetRawData getRawData = new GetRawData("https://www.flickr.com/services/feeds/photos_public.gne?&format=json&nojsoncallback=1");
-        getRawData.execute();
+        //GetRawData getRawData = new GetRawData("https://www.flickr.com/services/feeds/photos_public.gne?&format=json&nojsoncallback=1");
+        FlickrJsonData flickrJsonData = new FlickrJsonData("spongebob", true);
+        flickrJsonData.execute();
 
     }
 }

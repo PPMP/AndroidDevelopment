@@ -36,6 +36,10 @@ public class GetRawData {
         return mRawUrl;
     }
 
+    public void setmRawUrl(String uri){
+        this.mRawUrl = uri;
+    }
+
     public String getmData() {
         return mData;
     }
