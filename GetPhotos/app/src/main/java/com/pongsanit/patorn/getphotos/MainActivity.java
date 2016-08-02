@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 //        In contrast to other adapter-backed views such as ListView or GridView
 //        RecyclerView allows client code to provide custom layout arrangements
 //        for child views. A LayoutManager must be provided for RecyclerView to function
-        ProcessPhotos processPhotos = new ProcessPhotos("moon", false);
+        ProcessPhotos processPhotos = new ProcessPhotos("flower", false);
         processPhotos.execute();
 
     }
