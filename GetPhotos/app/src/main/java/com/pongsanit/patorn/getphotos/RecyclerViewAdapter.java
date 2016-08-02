@@ -45,10 +45,12 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<ImageViewHolder> {
      */
     @Override
     public ImageViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+//        Instantiates a layout XML file into its corresponding View objects
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.browse,null);
         ImageViewHolder imageViewHolder = new ImageViewHolder(view);
         return imageViewHolder;
     } //creates ViewHolder by connecting the browse layout to the ImageViewHolder class
+
 
     /**
      * Returns the total number of items in the data set hold by the adapter.

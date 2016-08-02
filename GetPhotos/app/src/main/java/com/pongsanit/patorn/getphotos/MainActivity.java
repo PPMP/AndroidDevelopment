@@ -22,7 +22,9 @@ public class MainActivity extends AppCompatActivity {
 
         mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-
+//        In contrast to other adapter-backed views such as ListView or GridView
+//        RecyclerView allows client code to provide custom layout arrangements
+//        for child views. A LayoutManager must be provided for RecyclerView to function
         ProcessPhotos processPhotos = new ProcessPhotos("moon", false);
         processPhotos.execute();
 
