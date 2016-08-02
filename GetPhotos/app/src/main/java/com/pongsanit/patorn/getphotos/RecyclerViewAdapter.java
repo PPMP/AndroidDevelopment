@@ -49,7 +49,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<ImageViewHolder> {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.browse,null);
         ImageViewHolder imageViewHolder = new ImageViewHolder(view);
         return imageViewHolder;
-    } //creates ViewHolder by connecting the browse layout to the ImageViewHolder class
+    } //Once create view holder - creates ViewHolder by connecting the browse layout to the ImageViewHolder class
 
 
     /**
