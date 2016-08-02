@@ -5,6 +5,9 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
+
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -56,4 +59,35 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<ImageViewHolder> {
     public int getItemCount() {
         return (null != mPhotosList ? mPhotosList.size() : 0);
     }
+
+    /**
+     * Called by RecyclerView to display the data at the specified position. This method should
+     * update the contents of the {@link ViewHolder#itemView} to reflect the item at the given
+     * position.
+     * <p>
+     * Note that unlike {@link ListView}, RecyclerView will not call this method
+     * again if the position of the item changes in the data set unless the item itself is
+     * invalidated or the new position cannot be determined. For this reason, you should only
+     * use the <code>position</code> parameter while acquiring the related data item inside
+     * this method and should not keep a copy of it. If you need the position of an item later
+     * on (e.g. in a click listener), use {@link ViewHolder#getAdapterPosition()} which will
+     * have the updated adapter position.
+     * <p>
+     * Override {@link #onBindViewHolder(ViewHolder, int, List)} instead if Adapter can
+     * handle effcient partial bind.
+     *
+     * @param holder   The ViewHolder which should be updated to represent the contents of the
+     *                 item at the given position in the data set.
+     * @param position The position of the item within the adapter's data set.
+     */
+    @Override
+    public void onBindViewHolder(ImageViewHolder holder, int position) {
+        Photo photo = mPhotosList.get(position);
+        Picasso.with(mContext).load(photo.getmImage()).error(R.drawable.placeholder)
+                .placeholder(R.drawable.placeholder)
+                .into(holder.thumbnail);
+
+        holder.title.setText(photo.getmTitle());
+    }
+
 }

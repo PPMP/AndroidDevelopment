@@ -47,7 +47,7 @@ public class FlickrJsonData extends GetRawData{
         super.setmRawUrl(mDestinationUri.toString());
         DownloadJsonData downloadJsonData = new DownloadJsonData();
         Log.v(LOG_TAG, "BUILT URI = " + mDestinationUri.toString());
-        downloadJsonData.execute(mDestinationUri.toString());
+        //downloadJsonData.execute(mDestinationUri.toString());
     }
     public void processResult() {
         if(getmDownloadStatus() != DownloadStatus.OK){

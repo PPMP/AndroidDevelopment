@@ -2,6 +2,7 @@ package com.pongsanit.patorn.getphotos;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import java.util.ArrayList;
@@ -19,9 +20,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //GetRawData getRawData = new GetRawData("https://www.flickr.com/services/feeds/photos_public.gne?&format=json&nojsoncallback=1");
-        FlickrJsonData flickrJsonData = new FlickrJsonData("spongebob", true);
-        flickrJsonData.execute();
+        mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+        ProcessPhotos processPhotos = new ProcessPhotos("moon", false);
+        processPhotos.execute();
 
     }
 
