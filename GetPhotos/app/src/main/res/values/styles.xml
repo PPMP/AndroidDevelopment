@@ -4,7 +4,16 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
     </style>
+<!--Theme.Base inheriting from AppTheme-->
+    <style name="Theme.Base" parent="AppTheme">
+        <item name="colorPrimary">@color/flickrPrimaryBackground</item>
+        <item name="colorPrimaryDark">@color/flickrSecondaryBackgroundColor</item>
+        <item name="colorAccent">@color/flickrColorBackgroundAccent</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/flickrBackgroundColor</item>
+    </style>
 
-    <style name="Theme.Base" parent="AppTheme"></style>
+    <style name="Theme.Flickr" parent="Theme.Base"/>
 
 </resources>
