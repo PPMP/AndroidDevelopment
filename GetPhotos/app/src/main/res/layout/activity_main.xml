@@ -6,10 +6,15 @@
     tools:context="com.pongsanit.patorn.getphotos.MainActivity">
 
     <include android:id="@+id/app_bar" layout="@layout/toolbar"/>
-    <view android:layout_width="match_parent"
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
         android:layout_below="@id/app_bar"
         android:layout_height="match_parent"
         class = "android.support.v7.widget.RecyclerView"
-        android:id="@+id/recycler_view"/>
+        android:id="@+id/recycler_view">
+
+    </android.support.v7.widget.RecyclerView>
+
 
 </RelativeLayout>

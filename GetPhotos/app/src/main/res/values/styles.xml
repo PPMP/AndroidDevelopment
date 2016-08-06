@@ -7,11 +7,11 @@
 <!--Theme.Base inheriting from AppTheme-->
     <style name="Theme.Base" parent="AppTheme">
         <item name="colorPrimary">@color/flickrPrimaryBackground</item>
-        <item name="colorPrimaryDark">@color/flickrSecondaryBackgroundColor</item>
         <item name="colorAccent">@color/flickrColorBackgroundAccent</item>
+        <item name="colorPrimaryDark">@color/flickrSecondaryBackgroundColor</item>
         <item name="android:windowActionBar">false</item>
         <item name="android:windowNoTitle">true</item>
-        <item name="android:windowBackground">@color/flickrBackgroundColor</item>
+        <item name="android:windowBackground">@color/md_teal_A800</item>
     </style>
 
     <style name="Theme.Flickr" parent="Theme.Base"/>
@@ -20,7 +20,7 @@
         <item name="android:textColorPrimary">@color/flickrPrimaryTextColor</item>
         <item name="colorControlHighlight">@color/flickrBackgroundColor</item>
         <item name="android:actionMenuTextColor">@color/flickrPrimaryTextColor</item>
-        <item name="android:textColorSecondary">@color/flickrSecondaryTextColor</item>
+        <item name="android:textColorSecondary">@color/flickrPrimaryTextColor</item>
         <item name="android:background">@color/flickrPrimaryBackground</item>
     </style>
 

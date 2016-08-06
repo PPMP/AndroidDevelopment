@@ -11,7 +11,7 @@
         android:layout_width="80dp"
         android:scaleType="fitCenter"
         android:layout_height="60dp"
-        android:src="@drawable/placeholder"/>
+        android:src="@drawable/placeholder" />
 
     <TextView
         android:id="@+id/titleOfImage"
@@ -20,7 +20,7 @@
         android:layout_marginLeft="8dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:maxLines="3"/>
+        android:maxLines="3" />
 
 </LinearLayout>
 <!--layout_marginLeft - to pad the text from the photo-->
