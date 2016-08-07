@@ -12,13 +12,13 @@
         <item name="android:windowActionBar">false</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowBackground">@color/md_white_1000</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
     <style name="Theme.Flickr" parent="Theme.Base"/>
 
     <style name="ActionBarThemeOverlay" parent="">
         <item name="android:textColorPrimary">@color/flickrPrimaryTextColor</item>
-        <item name="colorControlHighlight">@color/flickrBackgroundColor</item>
         <item name="android:actionMenuTextColor">@color/flickrPrimaryTextColor</item>
         <item name="android:textColorSecondary">@color/flickrPrimaryTextColor</item>
         <item name="android:background">@color/flickrPrimaryBackground</item>

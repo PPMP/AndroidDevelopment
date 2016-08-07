@@ -89,7 +89,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<ImageViewHolder> {
                 .placeholder(R.drawable.placeholder)
                 .into(holder.thumbnail);
 
-        holder.title.setText(photo.getmTitle());
+        holder.title.setText("Title: " + photo.getmTitle());
+        holder.link.setText("Link: " + photo.getmLink());
     }
 
 }

@@ -8,9 +8,9 @@
     <ImageView
         android:id="@+id/thumbnail"
         android:layout_gravity="center_horizontal"
-        android:layout_width="80dp"
+        android:layout_width="240dp"
         android:scaleType="fitCenter"
-        android:layout_height="60dp"
+        android:layout_height="180dp"
         android:src="@drawable/placeholder" />
 
     <TextView
@@ -20,7 +20,16 @@
         android:layout_marginLeft="8dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:maxLines="3" />
+        android:maxLines="10" />
+
+    <TextView
+        android:id="@+id/link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:maxLines="10" />
 
 </LinearLayout>
 <!--layout_marginLeft - to pad the text from the photo-->
