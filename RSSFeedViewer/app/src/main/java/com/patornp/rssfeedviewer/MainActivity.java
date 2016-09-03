@@ -9,6 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -44,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
                 ArrayAdapter<RSSItem> arrayAdapter = new ArrayAdapter<RSSItem>(
                         MainActivity.this, R.layout.list_of_items_view, parseRSSItems.getEachField());
                 listtopFields.setAdapter(arrayAdapter);
-
+                Toast.makeText(MainActivity.this, "Ready. Click again to display", Toast.LENGTH_LONG).show();
             }
         });
 
@@ -59,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
                 ArrayAdapter<RSSItem> arrayAdapter = new ArrayAdapter<RSSItem>(
                         MainActivity.this, R.layout.list_of_items_view, parseRSSItems.getEachField());
                 listtopFields.setAdapter(arrayAdapter);
-
+                Toast.makeText(MainActivity.this, "Ready. Click again to display", Toast.LENGTH_LONG).show();
             }
         });
 
